@@ -31,11 +31,14 @@
     <header id="site-head">
         <div class="vertical">
             <div id="site-head-content">
+                <div class="blog-title-wrap">
+                    <div class="inner">   
+                        <h1 class="blog-title"><a class="nav" href="{{@blog.url}}">{{@blog.title}}</a></h1>
+                   
+                        <h1 class="blog-author">By <a class="nav" href="http://www.yiningkarlli.com">Yining Karl Li</a></h1>
 
-                <!-- <div class="blog-title-wrap"><div class="inner">
-                {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-                <h1 class="blog-title">{{@blog.title}}</h1>
-                </div></div> -->
+                    </div>
+                </div>
 
 <!--                 <div class="blog-description-wrap"><div class="inner">
                 <h2 class="blog-description">{{@blog.description}}</h2>
