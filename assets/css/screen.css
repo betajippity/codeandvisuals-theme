@@ -347,6 +347,7 @@ table.plain {
     position: relative;
     width: 80%;
     max-width: 900px;
+    min-width: 480px;
     margin: 0 auto;
 }
 
@@ -361,6 +362,10 @@ table.plain {
    1. General
    ========================================================================== */
 
+.navbar-padding {
+    height: 0;
+}
+
 /* Big cover image on the home page */
 #site-head {
     position: relative;
@@ -370,7 +375,7 @@ table.plain {
     margin-bottom: 6rem;
     /*text-align: center;*/
     color: #333;
-    z-index: 1000 ;
+    z-index: 800 ;
     /*background: #303538 no-repeat center center;
     background-size: cover;*/
 }
@@ -436,6 +441,7 @@ main.content {
     display: inline;
     font-weight: 500;
     text-transform:uppercase;
+    z-index: 1100 ;
 }
 
 .blog-author {
@@ -446,6 +452,7 @@ main.content {
     display: inline;
     font-weight: 500;
     text-transform:uppercase;
+    z-index: 1100 ;
 }
 
 .blog-title-wrap {
@@ -454,7 +461,7 @@ main.content {
     background-color: #3d3d3d ;
     height: 110px ;
     opacity: .9;
-    border-bottom: 1px solid #E5E5E5;
+    /*border-bottom: 1px solid #E5E5E5;*/
 }
 
 .blog-description {
@@ -466,7 +473,7 @@ main.content {
 
 .blog-description-wrap {
     padding: 0em 0;
-    border-bottom: 1px solid #EEEEEE;
+    /*border-bottom: 1px solid #EEEEEE;*/
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -503,6 +510,7 @@ main.content {
 .post-title {
     font-size: 2.5rem;
     margin:0 0 0rem 0;
+    min-width: 300px;
 }
 
 .post-excerpt p {

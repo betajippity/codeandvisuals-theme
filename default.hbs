@@ -22,6 +22,7 @@
     <script type="text/javascript" src="//use.typekit.net/iat5vmc.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -34,27 +35,20 @@
                 <div class="blog-title-wrap">
                     <div class="inner">   
                         <h1 class="blog-title"><a class="nav" href="{{@blog.url}}">{{@blog.title}}</a></h1>
-                   
                         <h1 class="blog-author">By <a class="nav" href="http://www.yiningkarlli.com">Yining Karl Li</a></h1>
-
                     </div>
                 </div>
-
-<!--                 <div class="blog-description-wrap"><div class="inner">
-                <h2 class="blog-description">{{@blog.description}}</h2>
-                </div></div> -->
-
             </div>
         </div>
     </header>
-
+    <div class="navbar-padding"></div>
     {{! Everything else gets inserted here }}
     {{{body}}}
 
     <footer class="site-footer inner">
         <a class="subscribe icon-feed" href="{{@blog.url}}rss/"><span class="tooltip">Subscribe!</span></a>
         <div class="inner">
-             <section class="copyright">Copyright 2013 <a href="http://www.yiningkarlli.com/">Yining Karl Li</a>. Powered by <!-- <a class="icon-ghost" href="http://ghost.org">&nbsp;</a> --><a href="http://ghost.org">Ghost</a>. <!-- <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved. --></section>
+             <section class="copyright">Copyright 2013 <a href="http://www.yiningkarlli.com/">Yining Karl Li</a>. Powered by <a href="http://ghost.org">Ghost</a>.</section>
              <section class="poweredby">Theme forked from <a href="http://www.polygonix.com">Polygonix</a>'s <a href="https://github.com/polygonix/N-Coded">N'Coded</a></section>
         </div>
     </footer>
@@ -63,8 +57,9 @@
     {{ghost_foot}}
 
     {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
     <script type="text/javascript" src="/assets/js/figures.js"></script>
-
+    <script type="text/javascript" src="/assets/js/navbar.js"></script>
 </body>
 </html>
