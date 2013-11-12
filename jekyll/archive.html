@@ -1,0 +1,41 @@
+---
+layout: default
+title: Code & Visuals
+page-template: post-template
+---
+<!-- Content
+    ================================================== -->
+<main class="content" role="main">
+  <article class="post">
+      <section class="archive">
+      <h2 class="post-title">Archive</h2>
+        <section class="post-content">
+          <p>
+            {%for post in site.posts %}
+              {% if forloop.first %}
+                <h2>{{ post.date | date: '%Y' }}</h2>
+              {% endif %}
+              {% unless post.next %}
+                <!-- <ul class="this"> -->
+              {% else %}
+                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                {% if year != nyear %}
+                  <!-- </ul> --><br>
+                  <h2>{{ post.date | date: '%Y' }}</h2>
+                  <!-- <ul class="past"> -->
+                {% endif %}
+              {% endunless %}
+                <li> <a href="{{ post.url }}">{{ post.title }}</a> <time>{{ post.date | date:"%b %d " }}</time></li>
+            {% endfor %}
+            <!-- </ul> --><br>
+          </section>
+        </p>
+      </section>
+  </article>
+</main>
+
+
+      
+      
+      

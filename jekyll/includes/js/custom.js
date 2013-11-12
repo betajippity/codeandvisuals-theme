@@ -8,6 +8,12 @@ $(document).ready(function(){
 		if($(window).scrollTop()<=65){
 			$('.blog-author').css("opacity",titleFade);
 			$('.blog-title').css("opacity",titleFade);	
+			$('.blog-nav').css("top",navdrop+"px");
+			if($(window).scrollTop()>=54){
+				var navdrop = 67 + ($(window).scrollTop()-54);
+				$('.blog-nav').css("top",navdrop+"px");
+				console.log(navdrop);
+			}
 		}else{
 			var nameFade = ($window.scrollTop()-65)/20;
 			nameFade = Math.min(1,nameFade);
@@ -29,6 +35,7 @@ $(window).scroll(function(){
 		$('.blog-author').css("left","230px");
 		$('.blog-author').css("font-size","20px");	
 		$('.blog-author').css("position","absolute");		
+		$('.blog-nav').css("top","12px");
 	}else{	
 		$('.blog-title-wrap').css("height","");
 		$('#site-head').css("position","");
@@ -38,6 +45,7 @@ $(window).scroll(function(){
 		$('.blog-author').css("top","");
 		$('.blog-author').css("left","");
 		$('.blog-title').css("left","");
+		$('.blog-nav').css("top","");
 	}
 });
 

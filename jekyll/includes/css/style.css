@@ -471,6 +471,15 @@ main.content {
     z-index: 1100 ;
 }
 
+.blog-nav {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right ;
+    right: 0px;
+    top:69px;
+    position: absolute;
+}
+
 .blog-title-wrap {
     margin-left: -4px;
     color: white;
@@ -669,6 +678,27 @@ main.content {
     text-decoration: none;
 }
 
+.archive {
+/*    max-width: 450px;
+    margin-left: 25%;*/
+}
+
+.archive li{
+    list-style-type: none;
+}
+
+.archive time{
+        display: inline-block;
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    color: #999999;
+}
+
+.archive time:before{
+    content:"|";
+    margin-left:.5em; 
+    margin-right:.5em;
+}
 
 /* ==========================================================================
    1. Pagination
