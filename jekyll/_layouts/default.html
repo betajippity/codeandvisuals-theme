@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>{% if page.title %} {{ page.title }} {% endif %}</title>
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="/feed.xml">
 		<!-- For responsive site
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		-->
@@ -31,7 +32,7 @@
 	            <div id="site-head-content">
 	                <div class="blog-title-wrap">
 	                    <div class="inner">   
-	                        <h1 class="blog-title"><a class="nav" href="{{site.baseurl}}">{{site.sitename}}</a></h1>
+	                        <h1 class="blog-title"><a class="nav" href="{{site.baseurl}}">{{site.name}}</a></h1>
 	                        <h1 class="blog-author">By <a class="nav" href="{{site.authorurl}}">{{site.author}}</a></h1>
 	                    </div>
 	                </div>
@@ -46,10 +47,10 @@
 		    ================================================== -->
 
 		<footer class="site-footer inner">
-			<a class="subscribe icon-feed" href="{{site.baseurl}}/rss/"><span class="tooltip">Subscribe!</span></a>
+			<a class="subscribe icon-feed" href="/feed.xml"><span class="tooltip">Subscribe!</span></a>
 	        <div class="inner">
 	             <section class="copyright">Copyright 2013 <a href="{{site.authorurl}}">{{site.author}}</a>. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</section>
-	             <section class="poweredby">Theme ported to Jekyll from <a href="http://www.polygonix.com">Polygonix</a>'s <a href="https://github.com/polygonix/N-Coded">N'Coded</a></section>
+	             <section class="poweredby">Theme <a href="https://github.com/betajippity/codeandvisuals-theme">available on Github.</a></section>
 	        </div>
 		</footer>
 
