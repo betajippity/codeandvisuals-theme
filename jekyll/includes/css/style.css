@@ -609,7 +609,7 @@ main.content {
 
 /* Tweak the .post wrapper style */
 .post-template .post {
-    margin-top: 0;
+    /*margin-top: 0;*/
     border-bottom: none;
     padding-bottom: 0;
 }
